@@ -1,5 +1,4 @@
 /* The Modal (background) */
-<center>
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -211,6 +210,5 @@ h4 {
 .b,label.hcVar{
 	font-weight: bold;
 }
-</center>
 
 
