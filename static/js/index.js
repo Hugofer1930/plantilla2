@@ -12,7 +12,7 @@ function LED1_On() {
 function LED1_Off(){	
 	//alert("led off");
 	console.log("led off");
-	message = new Paho.MQTT.Message("OFF");
+	message = new Paho.MQTT.Message("DESACTIVAR");
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
