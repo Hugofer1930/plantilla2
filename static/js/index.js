@@ -88,7 +88,7 @@ function Histo1(){
 		  }
 	  		else { 
 		 
-	  document.getElementById("histo1").innerHTML=message.payloadString;
+	  document.getElementById("bothistorial").innerHTML=message.payloadString;
 			}
 	  	
   }
