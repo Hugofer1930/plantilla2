@@ -18,7 +18,14 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-
+function Histo1(){	
+	//alert("led off");
+	console.log("imprimiendo historial");
+	message = new Paho.MQTT.Message("historial impreso");
+    	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
+    	client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+}
 
 
 
@@ -69,8 +76,23 @@ function LED1_Off(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	  document.getElementById("sensor").innerHTML=message.payloadString;
+	  u=message.payloadString;	  
+	  if (u=="alarma activada y en orden")
+	  {
+	document.getElementById("sensor").innerHTML=message.payloadString;	  
+	  }
+	  else 
+		  if (u=="SEGURIDAD VIOLADA, DIRIGASE A CASA o presione el boton ACTIVAR BOCINA")
+		  {
+			document.getElementById("sensor").innerHTML=message.payloadString;	  
+		  }
+	  		else { 
+		 
+	  document.getElementById("histo1").innerHTML=message.payloadString;
+			}
+	  	
   }
+
 
 
   
