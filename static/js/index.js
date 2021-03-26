@@ -87,11 +87,27 @@ function Histo1(){
 			document.getElementById("sensor").innerHTML=message.payloadString;	  
 		  }
 	 
-	  else    						
+	  else 
+		  if (u=="hola desde la web")
 		{ 
-		 
-	  document.getElementById("historial").innerHTML=message.payloadString;
+		console.log("informacion relevante");	 
+	 // document.getElementById("historial").innerHTML=message.payloadString;
 		}
+	  else 
+		  if (u=="ACTIVAR")
+		{ 
+		console.log("informacion relevante"); 
+	 // document.getElementById("historial").innerHTML=message.payloadString;
+		}
+	  else 
+		  if (u=="DESACTIVAR")
+		{ 
+		console.log("informacion relevante");
+	 // document.getElementById("historial").innerHTML=message.payloadString;
+		}
+	  else {
+	  document.getElementById("historial").innerHTML=message.payloadString;
+	  }
 	  
   }
 
