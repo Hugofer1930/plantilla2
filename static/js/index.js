@@ -88,19 +88,27 @@ function Histo1(){
 			document.getElementById("sensor").innerHTML=message.payloadString;	  
 		  }
 	  else 
-                 if (d=="ACTIVAR")  						
+                 if (u=="ACTIVAR")  						
 			
 			{ 
 		 
 	 // document.getElementById("historial").innerHTML=message.payloadString;
 			}
 	  else 
-                 if (d=="DESACTIVAR")  						
+                 if (u=="DESACTIVAR")  						
 			
 			{ 
 		 
 	 // document.getElementById("historial").innerHTML=message.payloadString;
 			}
+	  else 
+                 if (u=="hola desde la web")  						
+			
+			{ 
+		 
+	 // document.getElementById("historial").innerHTML=message.payloadString;
+			}	  
+	  
 	  else 
                   						
 			
