@@ -77,7 +77,6 @@ function Histo1(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  u=message.payloadString;
-	  d= strlen(u);
 	  if (u=="alarma activada y en orden")
 	  {
 	document.getElementById("sensor").innerHTML=message.payloadString;	  
@@ -87,35 +86,12 @@ function Histo1(){
 		  {
 			document.getElementById("sensor").innerHTML=message.payloadString;	  
 		  }
-	 // else 
-           //      if (u=="ACTIVAR")  						
-			
-		//	{ 
+	 
+	  else    						
+		{ 
 		 
-	 // document.getElementById("historial").innerHTML=message.payloadString;
-		//	}
-	 // else 
-           //      if (u=="DESACTIVAR")  						
-			
-		//	{ 
-		 
-	 // document.getElementById("historial").innerHTML=message.payloadString;
-		//	}
-	 // else 
-           //      if (u=="hola desde la web")  						
-			
-		//	{ 
-		 
-	 // document.getElementById("historial").innerHTML=message.payloadString;
-		//	}	  
-	  
-	 // else 
-                  						
-			
-	//		{ 
-		 
-	 // document.getElementById("historial").innerHTML=message.payloadString;
-	//		}
+	  document.getElementById("historial").innerHTML=message.payloadString;
+		}
 	  
   }
 
