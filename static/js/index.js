@@ -106,7 +106,7 @@ function Histo1(){
 	 // document.getElementById("historial").innerHTML=message.payloadString;
 		}
 	  else {
-	  document.getElementById("historial").innerHTML=message.payloadString; <br>
+	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  
   }
