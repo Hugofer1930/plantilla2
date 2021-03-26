@@ -87,35 +87,35 @@ function Histo1(){
 		  {
 			document.getElementById("sensor").innerHTML=message.payloadString;	  
 		  }
-	  else 
-                 if (u=="ACTIVAR")  						
+	 // else 
+           //      if (u=="ACTIVAR")  						
 			
-			{ 
+		//	{ 
 		 
 	 // document.getElementById("historial").innerHTML=message.payloadString;
-			}
-	  else 
-                 if (u=="DESACTIVAR")  						
+		//	}
+	 // else 
+           //      if (u=="DESACTIVAR")  						
 			
-			{ 
+		//	{ 
 		 
 	 // document.getElementById("historial").innerHTML=message.payloadString;
-			}
-	  else 
-                 if (u=="hola desde la web")  						
+		//	}
+	 // else 
+           //      if (u=="hola desde la web")  						
 			
-			{ 
+		//	{ 
 		 
 	 // document.getElementById("historial").innerHTML=message.payloadString;
-			}	  
+		//	}	  
 	  
-	  else 
+	 // else 
                   						
 			
-			{ 
+	//		{ 
 		 
-	  document.getElementById("historial").innerHTML=message.payloadString;
-			}
+	 // document.getElementById("historial").innerHTML=message.payloadString;
+	//		}
 	  
   }
 
