@@ -27,6 +27,15 @@ function Histo1(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
+function Histo2(){	
+	//alert("led off");
+	console.log("historial borrado");
+	message = new Paho.MQTT.Message("historial borrado");
+    	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
+    	client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+}
+
 
 
 
@@ -105,6 +114,14 @@ function Histo1(){
 		console.log("informacion relevante");
 	 // document.getElementById("historial").innerHTML=message.payloadString;
 		}
+	  else 
+		  if (u=="historial borrado")
+		{ 
+		console.log("informacion relevante");
+	 // document.getElementById("historial").innerHTML=message.payloadString;
+		}
+	  
+	  
 	  else {
 	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
