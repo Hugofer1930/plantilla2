@@ -20,6 +20,7 @@ function LED1_Off(){
 
 
 
+
 function borrarhisto(){	
 	//alert("led off");
 	console.log("historial borrado");
@@ -36,7 +37,7 @@ if (x=="embebidos")
 	function Histo1(){	
 	//alert("led off");
 	console.log("imprimiendo historial");
-	message = new Paho.MQTT.Message(x);
+	message = new Paho.MQTT.Message("historial impreso");
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
