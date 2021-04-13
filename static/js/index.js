@@ -35,6 +35,14 @@ function borrarhisto(){
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
+function myFunction() {
+  var x = document.getElementById("myText").value;
+//console.log("historial borrado");
+	message = new Paho.MQTT.Message(x);
+    	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
+    	client.send(message);
+  //document.getElementById("demo").innerHTML = x;
+}
 
 
 
