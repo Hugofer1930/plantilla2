@@ -87,12 +87,12 @@ function borrarhisto(){
 	  
 	  
 	  //var x = document.getElementById("myText").value;
-	  if (u=="historial 1")
+	  if (u=="Primer historial")
 	  {
 	console.log("informacion relevante");	  
 	  }
 	  else 
-		  if (u=="historial 2")
+		  if (u=="Segundo historial")
 		  {
 			console.log("informacion relevante");	  
 		  }
