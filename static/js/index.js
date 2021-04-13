@@ -18,14 +18,7 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function Histo1(){	
-	//alert("led off");
-	console.log("imprimiendo historial");
-	message = new Paho.MQTT.Message("historial impreso");
-    	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
-    	client.send(message);
-	//document.getElementById("sensor").innerHTML="led off";
-}
+
 
 function borrarhisto(){	
 	//alert("led off");
@@ -37,10 +30,22 @@ function borrarhisto(){
 }
 function myFunction() {
   var x = document.getElementById("myText").value;
-//console.log("historial borrado");
+if (x=="embebidos")
+{
+	function Histo1(){	
+	//alert("led off");
+	//console.log("imprimiendo historial");
 	message = new Paho.MQTT.Message(x);
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+}
+}
+else {
+	console.log("password incorrecto");
+}
+//console.log("historial borrado");
+
   //document.getElementById("demo").innerHTML = x;
 }
 
