@@ -1,22 +1,6 @@
 //https://www.eclipse.org/paho/clients/js/
 
-function LED1_On() {
-	//alert("led on");
-	console.log("led on");
-	//document.getElementById("sensor").innerHTML="led on";
-	message = new Paho.MQTT.Message("ACTIVAR");
-    	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
-    	client.send(message);
-  
-}
-function LED1_Off(){	
-	//alert("led off");
-	console.log("led off");
-	message = new Paho.MQTT.Message("DESACTIVAR");
-    	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
-    	client.send(message);
-	//document.getElementById("sensor").innerHTML="led off";
-}
+
 
 
 
@@ -40,21 +24,6 @@ function borrarhisto(){
 }
 
 
-function myFunction() {
-  var x = document.getElementById("myText").value;
-if (x=="embebidos")
-{
-	console.log("password correcto, el usuario tiene permitido imprimir el historial");
-	document.getElementById('bothistorial').disabled=false;
-}
-else {
-	console.log("password incorrecto");
-	document.getElementById('bothistorial').disabled=true;
-}
-//console.log("historial borrado");
-
-  //document.getElementById("demo").innerHTML = x;
-}
 
 
 
