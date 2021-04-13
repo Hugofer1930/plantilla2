@@ -30,7 +30,7 @@ function Histo1(){
 function borrarhisto(){	
 	//alert("led off");
 	console.log("historial borrado");
-	message = new Paho.MQTT.Message("historial borrado");
+	message = new Paho.MQTT.Message("  ");
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
