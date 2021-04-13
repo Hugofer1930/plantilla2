@@ -118,7 +118,7 @@ function borrarhisto(){
 		  if (u=="historial borrado")
 		{ 
 		console.log("informacion relevante");
-	 // document.getElementById("historial").innerHTML=message.payloadString;
+	  document.getElementById("historial").innerHTML=message.payloadString;
 		}
 	  
 	  
