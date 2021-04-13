@@ -45,10 +45,11 @@ function myFunction() {
 if (x=="embebidos")
 {
 	console.log("password correcto, el usuario tiene permitido imprimir el historial");
-	
+	document.getElementById('bothistorial').disabled=false;
 }
 else {
 	console.log("password incorrecto");
+	document.getElementById('bothistorial').disabled=true;
 }
 //console.log("historial borrado");
 
