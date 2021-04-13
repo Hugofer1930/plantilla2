@@ -16,16 +16,16 @@ function Clean(){
 
 	function Histo1(){	
 	//alert("led off");
-	console.log("imprimiendo historial 1, espere un momento");
-	message = new Paho.MQTT.Message("Primer historial");
+	console.log("Primer historial");
+	message = new Paho.MQTT.Message("Imprimiendo historial 1, espere un momento");
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
 	function Histo2(){	
 	//alert("led off");
-	console.log("imprimiendo historial 2, espere un momento");
-	message = new Paho.MQTT.Message("Segundo historial");
+	console.log("Segundo historial");
+	message = new Paho.MQTT.Message("Imprimiendo historial 2, espere un momento");
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
@@ -87,14 +87,16 @@ function Clean(){
 	  
 	  
 	  //var x = document.getElementById("myText").value;
-	  if (u=="Primer historial")
+	  if (u=="Imprimiendo historial 1, espere un momento")
 	  {
-	console.log("informacion relevante");	  
+	console.log("informacion relevante");	
+	document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  else 
-		  if (u=="Segundo historial")
+		  if (u=="Imprimiendo historial 2, espere un momento")
 		  {
-			console.log("informacion relevante");	  
+			console.log("informacion relevante");
+			document.getElementById("historial").innerHTML=message.payloadString;
 		  }
 	 
 	  else 
