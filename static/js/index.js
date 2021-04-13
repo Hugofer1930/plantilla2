@@ -94,6 +94,7 @@ function myFunction() {
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  u=message.payloadString;
+	  var x = document.getElementById("myText").value;
 	  if (u=="alarma activada y en orden")
 	  {
 	document.getElementById("sensor").innerHTML=message.payloadString;	  
@@ -127,6 +128,12 @@ function myFunction() {
 		{ 
 		console.log("borrando el historial");
 	  document.getElementById("historial").innerHTML=message.payloadString;
+		}
+	  else 
+		  if (u==x)
+		{ 
+		console.log("password");
+	  //document.getElementById("historial").innerHTML=message.payloadString;
 		}
 
 	  
