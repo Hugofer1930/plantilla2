@@ -87,14 +87,14 @@ function borrarhisto(){
 	  
 	  
 	  //var x = document.getElementById("myText").value;
-	  if (u=="imprimiendo historial 1, espere un momento")
+	  if (u=="historial 1")
 	  {
-	document.getElementById("historial").innerHTML=message.payloadString;	  
+	console.log("informacion relevante");	  
 	  }
 	  else 
-		  if (u=="imprimiendo historial 2, espere un momento")
+		  if (u=="historial 2")
 		  {
-			document.getElementById("historial").innerHTML=message.payloadString;	  
+			console.log("informacion relevante");	  
 		  }
 	 
 	  else 
