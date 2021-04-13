@@ -114,6 +114,12 @@ function borrarhisto(){
 		console.log("informacion relevante");
 	 // document.getElementById("historial").innerHTML=message.payloadString;
 		}
+	  else 
+		  if (u=="Borrando todo")
+		{ 
+		console.log("borrando el historial");
+	  document.getElementById("historial").innerHTML=message.payloadString;
+		}
 
 	  
 	  
