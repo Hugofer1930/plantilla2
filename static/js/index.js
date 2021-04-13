@@ -45,7 +45,7 @@ function myFunction() {
 if (x=="embebidos")
 {
 	console.log("password correcto, el usuario tiene permitido imprimir el historial");
-
+	<button id = 'bothistorial'type="button" onclick="Histo1();">
 }
 else {
 	console.log("password incorrecto");
