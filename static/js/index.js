@@ -5,10 +5,10 @@
 
 
 
-function borrarhisto(){	
+function Clean(){	
 	//alert("led off");
-	console.log("historial borrado");
-	message = new Paho.MQTT.Message("  ");
+	console.log("borrando historial");
+	message = new Paho.MQTT.Message(" ");
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
@@ -103,6 +103,10 @@ function borrarhisto(){
 		console.log("informacion relevante");	 
 	 // document.getElementById("historial").innerHTML=message.payloadString;
 		}
+	  
+	  
+	  
+	  
 	 	  else {
 	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
