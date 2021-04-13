@@ -32,9 +32,10 @@ function myFunction() {
   var x = document.getElementById("myText").value;
 if (x=="embebidos")
 {
+	console.log("password correcto, el usuario tiene permitido imprimir el historial");
 	function Histo1(){	
 	//alert("led off");
-	//console.log("imprimiendo historial");
+	console.log("imprimiendo historial");
 	message = new Paho.MQTT.Message(x);
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
