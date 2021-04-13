@@ -17,7 +17,7 @@ function Clean(){
 	function Histo1(){	
 	//alert("led off");
 	console.log("Primer historial");
-	message = new Paho.MQTT.Message("Imprimiendo historial 1, espere un momento");
+	message = new Paho.MQTT.Message("Imprimiendo Primer historial, espere un momento");
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
@@ -25,7 +25,7 @@ function Clean(){
 	function Histo2(){	
 	//alert("led off");
 	console.log("Segundo historial");
-	message = new Paho.MQTT.Message("Imprimiendo historial 2, espere un momento");
+	message = new Paho.MQTT.Message("Imprimiendo Segundo historial, espere un momento");
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
