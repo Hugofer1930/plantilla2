@@ -29,11 +29,7 @@ function borrarhisto(){
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
-function myFunction() {
-  var x = document.getElementById("myText").value;
-if (x=="embebidos")
-{
-	console.log("password correcto, el usuario tiene permitido imprimir el historial");
+
 	function Histo1(){	
 	//alert("led off");
 	console.log("imprimiendo historial");
@@ -42,6 +38,14 @@ if (x=="embebidos")
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
+
+
+function myFunction() {
+  var x = document.getElementById("myText").value;
+if (x=="embebidos")
+{
+	console.log("password correcto, el usuario tiene permitido imprimir el historial");
+
 }
 else {
 	console.log("password incorrecto");
