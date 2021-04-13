@@ -16,12 +16,21 @@ function borrarhisto(){
 
 	function Histo1(){	
 	//alert("led off");
-	console.log("imprimiendo historial");
-	message = new Paho.MQTT.Message("historial impreso");
+	console.log("imprimiendo historial 1, espere un momento");
+	message = new Paho.MQTT.Message("historial 1");
     	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
+	function Histo2(){	
+	//alert("led off");
+	console.log("imprimiendo historial 2, espere un momento");
+	message = new Paho.MQTT.Message("historial 2");
+    	message.destinationName = "hfcasanova.fie@unach.edu.ec/claseprueba";
+    	client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+}
+
 
 
 
@@ -75,15 +84,17 @@ function borrarhisto(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  u=message.payloadString;
-	  var x = document.getElementById("myText").value;
-	  if (u=="alarma activada y en orden")
+	  
+	  
+	  //var x = document.getElementById("myText").value;
+	  if (u=="imprimiendo historial 1, espere un momento")
 	  {
-	document.getElementById("sensor").innerHTML=message.payloadString;	  
+	document.getElementById("historial").innerHTML=message.payloadString;	  
 	  }
 	  else 
-		  if (u=="SEGURIDAD VIOLADA, DIRIGASE A CASA o presione el boton ACTIVAR BOCINA")
+		  if (u=="imprimiendo historial 2, espere un momento")
 		  {
-			document.getElementById("sensor").innerHTML=message.payloadString;	  
+			document.getElementById("historial").innerHTML=message.payloadString;	  
 		  }
 	 
 	  else 
@@ -92,34 +103,7 @@ function borrarhisto(){
 		console.log("informacion relevante");	 
 	 // document.getElementById("historial").innerHTML=message.payloadString;
 		}
-	  else 
-		  if (u=="ACTIVAR")
-		{ 
-		console.log("informacion relevante"); 
-	 // document.getElementById("historial").innerHTML=message.payloadString;
-		}
-	  else 
-		  if (u=="DESACTIVAR")
-		{ 
-		console.log("informacion relevante");
-	 // document.getElementById("historial").innerHTML=message.payloadString;
-		}
-	  else 
-		  if (u=="Borrando todo")
-		{ 
-		console.log("borrando el historial");
-	  document.getElementById("historial").innerHTML=message.payloadString;
-		}
-	  else 
-		  if (u==x)
-		{ 
-		console.log("password");
-	  //document.getElementById("historial").innerHTML=message.payloadString;
-		}
-
-	  
-	  
-	  else {
+	 	  else {
 	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  
